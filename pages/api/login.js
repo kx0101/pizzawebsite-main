@@ -14,16 +14,15 @@ const handler = (req, res) => {
           sameSite: "strict",
           path: "/",
         },
-        "Access-Control-Allow-Origin", "*",
-        "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept, Authorization"
         )
       );
       res.setHeader("Access-Control-Allow-Origin", "*")
       res.setHeader(
         "Access-Control-Allow-Headers",
-        "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-      );
+        "Origin, X-Requested-With, Content-Type, Accept, Authorization",
+      )
+      res.setHeader("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
+      
       res.status(200).json("Succesfull");
     } else {
       res.status(400).json("Wrong Credentials!");
