@@ -1,6 +1,6 @@
 # Pizza Store Website 
 
-## Made with React, MongoDB, Redux
+## Made with Nextjs React, MongoDB, Redux
 
 <img src="/public/img/s11.png" />
 <img src="/public/img/s22.png" />
