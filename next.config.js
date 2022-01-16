@@ -1,3 +1,3 @@
-module.exports = withCSS({
-    target: 'serverless'
-});
+module.exports = {
+  reactStrictMode: true,
+}
