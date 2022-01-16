@@ -12,7 +12,7 @@ const Orderdetail = ({ total, createOrder }) => {
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <h1 className={styles.title}>It will cost X €</h1>
+                <h1 className={styles.title}>It will cost {total} €</h1>
                 <div className={styles.item}>
                     <label className={styles.input}>Name Surname</label>
                     <input type="text" placeholder="John Doe" className={styles.input} onChange={(e) => setCustomer(e.target.value)} />
