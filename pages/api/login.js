@@ -16,6 +16,10 @@ const handler = (req, res) => {
         },
         )
       );
+      res.setHeader('Access-Control-Allow-Origin', "*");
+      res.setHeader('Access-Control-Allow-Methods', 'POST');
+      res.setHeader("Access-Control-Allow-Headers", "accept, content-type");
+      res.setHeader("Access-Control-Max-Age", "1728000");
       
       res.status(200).json("Succesfull");
     } else {
