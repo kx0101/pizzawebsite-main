@@ -117,8 +117,8 @@ export const getServerSideProps = async (ctx) => {
             }
         }
     }
-    const productRes = await axios.get("https://pizzawebsite-main.vercel.app/products")
-    const orderRes = await axios.get("https://pizzawebsite-main.vercel.app/orders")
+    const productRes = await axios.get("https://pizzawebsite-main.vercel.app/api/products")
+    const orderRes = await axios.get("https://pizzawebsite-main.vercel.app/api/orders")
 
     return {
         props: {
