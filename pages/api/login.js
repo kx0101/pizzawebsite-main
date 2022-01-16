@@ -14,11 +14,10 @@ const handler = (req, res) => {
           sameSite: "strict",
           path: "/",
         },
-        res.setHeader("Access-Control-Allow-Origin", "*"),
-        res.setHeader(
-          "Access-Control-Allow-Headers",
-          "Origin, X-Requested-With, Content-Type, Accept, Authorization"
-        ))
+        "Access-Control-Allow-Origin", "*",
+        "Access-Control-Allow-Headers",
+        "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+        )
       );
       res.status(200).json("Succesfull");
     } else {
